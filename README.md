@@ -20,10 +20,10 @@ Cost Function
 Parameter Update Rule 
 ### Step 6: 
 Iterative Training 
-### Step 7:Model Evaluation 
-### Step 8.:End
-
-
+### Step 7:
+Model Evaluation 
+### Step 8:
+End
 
 ## Program:
 
