@@ -42,15 +42,12 @@ from sklearn.multioutput import MultiOutputRegressor
 from sklearn.model_selection import train_test_split 
 from sklearn.metrics import mean_squared_error 
 from sklearn.preprocessing import StandardScaler
-# Load the California Housing dataset
 dataset = fetch_california_housing()
 df=pd. DataFrame(dataset.data, columns=dataset. feature_names)
 df ['HousingPrice']=dataset.target
 print(df.head ())
-# Use the first 3 features as inputs
-X = df. drop(columns=['AveOccup', 'HousingPrice'])#data[:, :3] # Features: 'MedInc', 'HouseAge', 'AveRooms '
-# Use 'MedHouseVal' and 'AveOccup' as output variables
-Y = df[[ 'AveOccup', 'HousingPrice' ]]#np.column_stack((data.target, data.data[:, 6])) # Targets: 'MedHouseVal', 'AveOccup'
+X = df. drop(columns=['AveOccup', 'HousingPrice'])
+Y = df[[ 'AveOccup', 'HousingPrice' ]]
 ```
 
 ## Output:
